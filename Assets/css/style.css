@@ -60,7 +60,7 @@ body {
 }
 
 .mynavbar {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   backdrop-filter: blur(4px);
 }
 
@@ -356,6 +356,35 @@ footer li{
   display: inline;
   margin: 0.5rem;
 }
+
+.audio-icon{
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotation 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Queries */
 /* Extra Large */
 @media (max-width: 1200px) {
